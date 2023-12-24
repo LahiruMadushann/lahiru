@@ -28,7 +28,7 @@ const ProjectCard = ({
             scale: 1,
             speed: 450,
           }}
-          className="bg-gradient-to-tr from-slate-300/10 to-indigo-300/40 backdrop-blur-md p-3 sm:p-5  rounded-2xl md:w-[360px]  w-full"
+          className="bg-gradient-to-tr from-slate-300/10 to-indigo-300/40 backdrop-blur-md p-5  rounded-2xl sm:w-[360px] w-full"
         >
           <div className="relative w-full h-[230px]">
             <img
@@ -93,7 +93,7 @@ const Projects = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-48">
+      <div className="mt-20 flex flex-wrap justify-between gap-6">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
