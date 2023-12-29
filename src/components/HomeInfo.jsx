@@ -17,12 +17,14 @@ const renderContent = {
         <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
             Hi, I am <span className='font-semibold'>Lahiru</span> 👋
             <br/>
-            A Computer Science Student from Sri Lanka
+            A Full-Stack Developer from Sri Lanka
+            <br/>
+            Want to see more details move the plane
         </h1>
     ),
     2: (
         <InfoBox 
-            text="Worked with many companies and picked up many skills along the way"
+            text="I worked with university projects and picked up many skills along the way"
             link='/about'
             btnText='Learn more'
         />
@@ -31,12 +33,12 @@ const renderContent = {
         <InfoBox 
             text="Led multiple projects to success over the years. Curious about the impact?"
             link='/projects'
-            btnText='Visit my protofolio'
+            btnText='See my projects'
         />
     ),
     4: (
         <InfoBox 
-            text="Need a project done or looking for a dev? I'm just a few keystrokes away"
+            text="Need a project done or looking for a dev? Let's connect"
             link='/contact'
             btnText="Let's talk"
         />
