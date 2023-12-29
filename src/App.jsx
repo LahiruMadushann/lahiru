@@ -8,12 +8,12 @@ const App = () => {
     <main className='bg-slate-300/20 h-full'>
         <Router basename="/">
             <Navbar />
-            <Routes>
+           
                 <Route path='/home' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/projects' element={<Projects />} />
                 <Route path='/contact' element={<Contact />} />
-            </Routes>
+            
         </Router>
     </main>
   )
