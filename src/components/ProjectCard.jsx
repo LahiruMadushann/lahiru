@@ -8,6 +8,11 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 
+const fallDownVariants = {
+  hidden: { opacity: 0, y: -50 },
+  visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 150 } }
+};
+
 const ProjectCard = ({
     index,
     name,
@@ -19,7 +24,10 @@ const ProjectCard = ({
     return (
       <div className="relative">
         <motion.div
-          variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+          variants={fallDownVariants}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
           className="mb-8"
         >
           <Tilt

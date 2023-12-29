@@ -9,12 +9,19 @@ import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import ProjectCard from "../components/ProjectCard";
 
-
+const fallDownVariants = {
+  hidden: { opacity: 0, y: -50 },
+  visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 150 } }
+};
 
 const Projects = () => {
   return (
     <section className="max-container ">
-      <motion.div variants={textVariant()} className="mb-12 mt-[-6vw]">
+      <motion.div variants={fallDownVariants}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+         className="mb-12 mt-[-6vw]">
         <h1 className="head-text">
           My{" "}
           <span className="blue-gradient_text font-semibold drop-shadow-sm">
@@ -24,7 +31,10 @@ const Projects = () => {
       </motion.div>
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fallDownVariants}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
           className="className='mt-5 flex flex-col gap-3 text-slate-500'"
         >
           I've embarked on numerous projects throughout the years, but these are
