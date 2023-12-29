@@ -1,15 +1,15 @@
 import React from 'react'
-import { Route,BrowserRouter as Router,Routes } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { Home, About, Projects, Contact } from './pages';
 import Navbar from './components/Navbar'
 
 const App = () => {
   return (
     <main className='bg-slate-300/20 h-full'>
-        <Router>
+        <Router basename="/lahiru">
             <Navbar />
             <Routes>
-                <Route path='/lahiru' element={<Home />} />
+                <Route path='/home' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/projects' element={<Projects />} />
                 <Route path='/contact' element={<Contact />} />
@@ -17,5 +17,6 @@ const App = () => {
         </Router>
     </main>
   )
-  }
+}
+
 export default App
