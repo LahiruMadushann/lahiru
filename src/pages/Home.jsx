@@ -9,7 +9,8 @@ import HomeInfo from '../components/HomeInfo'
 
 import sakura from '../assets/sakura.mp3'
 import { soundoff, soundon } from '../assets/icons'
-
+import Navbar from '../components/Navbar'
+<Navbar />
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
   audioRef.current.volume = 0.4;
@@ -60,6 +61,8 @@ const Home = () => {
   const [planeScale, planePosition] = adjustPlaneForScreenSize();
 
   return (
+    <>
+    <Navbar />
     <section className='w-full h-screen relative'>
       <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
         {currentStage && <HomeInfo currentStage={currentStage} />}
@@ -100,6 +103,7 @@ const Home = () => {
         />
       </div>
     </section>
+    </>
   )
 }
 
