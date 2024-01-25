@@ -38,7 +38,7 @@ import {
     threejs,
 } from "../assets/icons";
 
-import {seacucumber,bookingApp, hotel, hospital, gameHub, beahome} from "../assets/projectImage"
+import {seacucumber,bookingApp, hotel, hospital, gameHub, beahome, phoneShop} from "../assets/projectImage"
 
 export const skills = [
     {
@@ -318,12 +318,37 @@ export const projects = [
           },
         ],
         image: hotel,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/LahiruMadushann/Hotel_and_Restaurent_Billing_System",
+      },
+      {
+        name: "Mobile Phone Shop",
+        description:
+          "Created a Web Application to buy mobile phones. In this web page admin pannel can update delete users and mobile phones and other details. It creates using React Js, Spring Boot, MongoDB and Chakra UI.",
+        tags: [
+          {
+            name: "react js",
+            
+          },
+          {
+            name: "spring boot",
+            
+          },
+          {
+            name: "mongodb",
+            
+          },
+          {
+            name: "chakra ui",
+            
+          },
+        ],
+        image: phoneShop,
+        source_code_link: "https://github.com/LahiruMadushann/mobilePhoneShop",
       },
       {
         name: "E-channelling System for Animal Hospitals",
         description:
-          "Created a Desktop Application to book hotels and order foods . It creates using JavaFX, Hibernate and CSS.",
+          "Develop a Animal Hospital System to manage it. It addressing critical challenges in accessing veterinary service. It creates using PHP, JavaScript, Bootstrap, CSS, MySQL.",
         tags: [
           {
             name: "php",
@@ -341,6 +366,10 @@ export const projects = [
             name: "css",
             
           },
+          {
+            name: "mysql",
+            
+          },
         ],
         image: hospital,
         source_code_link: "https://github.com/LahiruMadushann/E-channelling-System-for-Animal-Hospitals-Public",
@@ -348,7 +377,7 @@ export const projects = [
       {
         name: "Game Hub",
         description:
-          "Created a Desktop Application to book hotels and order foods . It creates using JavaFX, Hibernate and CSS.",
+          "Created a Web Application to get games. It's a static web application. It creates using React, TypeScript and tailwind CSS.",
         tags: [
           {
             name: "react",
@@ -373,7 +402,7 @@ export const projects = [
       {
         name: "Be a Home",
         description:
-          "Created a Desktop Application to book hotels and order foods . It creates using JavaFX, Hibernate and CSS.",
+          "Created a Web Application to help street animal. Using this app you can find and get a puppy as street animal, also you can add street animals to this web application. It creates using PHP, JavaScript, Bootstrap, CSS, MySQL..",
         tags: [
             {
                 name: "php",
